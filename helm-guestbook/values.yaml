@@ -17,7 +17,7 @@ ingress:
     argocd.argoproj.io/compare-result: "true"
   path: /
   hosts:
-    - guestbook.domain.local
+    - helm-guestbook.dev01.ovh.smile.ci
   tls: []
 
 resources: {}
