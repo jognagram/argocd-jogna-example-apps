@@ -1,4 +1,4 @@
 ingress:
   enabled: true
   hosts:
-    - guestbook-prod.domain.local
+    - helm-guestbook.dev01.ovh.smile.ci
