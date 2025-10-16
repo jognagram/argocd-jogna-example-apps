@@ -1,3 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: gcr.io/google-samples/gb-frontend
+  tag: v5
+  pullPolicy: IfNotPresent
+
+containerPort: 80
+
+service:
+  type: ClusterIP
+  port: 80
+
 ingress:
   enabled: true
   annotations:
@@ -6,3 +19,11 @@ ingress:
   hosts:
     - guestbook.domain.local
   tls: []
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
