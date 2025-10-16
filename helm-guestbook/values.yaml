@@ -1,8 +1,8 @@
 ingress:
-  enabled: false
+  enabled: true
   annotations:
-    {}
+    argocd.argoproj.io/compare-result: "true"
   path: /
   hosts:
-    - chart-example.local
+    - guestbook.domain.local
   tls: []
